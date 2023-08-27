@@ -21,7 +21,7 @@ function updatemap() {
                     .setLngLat([longitude,latitude])
                     .addTo(map)
             });
-        })
+        }).catch(err=> console.log('err--------',err))
 
 }
 updatemap();
